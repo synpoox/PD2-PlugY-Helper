@@ -8,7 +8,7 @@
 #Requires AutoHotkey v2.0.18+
 #HotIf WinActive('ahk_class Diablo II')
 
-IsStashOpen() => PixelSearch(&StashGoldx, &StashGoldy, 695, 1170, 740, 1207, 0xDCD5B0, 3)
+IsStashOpen() => PixelSearch(&StashGoldx, &StashGoldy, 695, 1170, 740, 1207, 0xDCD5B0, 20)
 StashClick(x, y) {
     MouseGetPos &xpos, &ypos
     MouseClick "left", x, y
