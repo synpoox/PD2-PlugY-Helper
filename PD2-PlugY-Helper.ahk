@@ -5,6 +5,7 @@
 ; Date:      Nov 15 2024
 ; Version:   0.1.0
 
+#Requires AutoHotkey v2.0.18+
 #HotIf WinActive('ahk_class Diablo II')
 
 IsStashOpen() => PixelSearch(&StashGoldx, &StashGoldy, 695, 1170, 740, 1207, 0xDCD5B0, 3)
