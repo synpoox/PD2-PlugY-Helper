@@ -6,7 +6,7 @@
 ; Version:   0.2.0
 
 #Requires AutoHotkey v2.0.18+
-#HotIf WinActive('ahk_class Diablo II')
+#HotIf WinActive("ahk_class Diablo II")
 
 UpdateScalingFactors() {
     WinGetPos(&WinX, &WinY, &WinWidth, &WinHeight, "A")
@@ -22,7 +22,13 @@ UpdateScalingFactors() {
 
 IsStashOpen() {
     UpdateScalingFactors()
-    return PixelSearch(&StashGoldx, &StashGoldy, Round(695 * ScaleX), Round(1170 * ScaleY), Round(740 * ScaleX), Round(1207 * ScaleY), 0xDCD5B0, 20)
+    
+    StartX := Floor(685 * ScaleX)
+    StartY := Floor(1150 * ScaleY)
+    EndX := Ceil(745 * ScaleX)
+    EndY := Ceil(1202 * ScaleY)
+
+    return PixelSearch(&StashGoldx, &StashGoldy, StartX, StartY, EndX, EndY, 0xDCD5B0, 20)
 }
 
 StashClick(x, y) {

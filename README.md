@@ -2,7 +2,7 @@
 A helper tool for PD2 PlugY and other mods based off it.
 
 ## Compatibility
-- Windowed D2GL 16:9 Resolutions - excluding 1600x900
+- D2GL 16:9 Resolutions - Windowed Mode
 - Most in-game Gamma/Contrast settings should work, although wasn't thoroughly tested
 - PD2 PlugY
 - [PD2 Reawakening](https://github.com/synpoox/pd2-reawakening)
