@@ -3,7 +3,7 @@
 ; Author:    Synpoo
 ; Github:    https://github.com/synpoox/PD2-PlugY-Helper
 ; Date:      Nov 16 2024
-; Version:   0.2.0
+; Version:   0.2.1
 
 #Requires AutoHotkey v2.0.18+
 #HotIf WinActive("ahk_class Diablo II")
@@ -22,7 +22,7 @@ UpdateScalingFactors() {
 
 IsStashOpen() {
     UpdateScalingFactors()
-    
+
     StartX := Floor(685 * ScaleX)
     StartY := Floor(1150 * ScaleY)
     EndX := Ceil(745 * ScaleX)
